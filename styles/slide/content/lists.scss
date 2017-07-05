@@ -8,7 +8,7 @@ ol, ul {
 	counter-reset:list;
 
 	li {
-
+		@include wrap-line-height;
 		page-break-inside:avoid;
 		text-indent:-$minorGridX/2;
 
@@ -27,6 +27,13 @@ ol, ul {
 	ol, ul {
 		margin-top:0;
 		margin-bottom:0;
+
+		// Edits for Jasper
+		li {
+			$factor: 5/6;
+			font-size: 30px * $factor;
+			@include wrap-line-height (2*$minorGridY * $factor);
+			}
 		}
 
 	}

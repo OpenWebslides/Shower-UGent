@@ -10,6 +10,7 @@ h2 {
 	margin: -9px 0 ($minorGridY - 9px) 0; // font adjustment
 	}
 p {
+	@include wrap-line-height;
 	margin: -10px 0 ($minorGridY + 10px) 0;
 	&.note {
 		color:rgba(black,.33);

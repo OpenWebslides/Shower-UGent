@@ -71,3 +71,15 @@ $yellow: #FFD200;
 	height:1px;
 	border:none;
 	}
+
+// Line-height edits for Jasper
+
+@mixin wrap-line-height (
+	$total-line-height: 2*$minorGridY,
+	$wrap-line-height: 50px
+) {
+	$line-height-diff: $total-line-height - $wrap-line-height;
+	line-height: $wrap-line-height;
+	padding-top: $line-height-diff / 2;
+	padding-bottom: $line-height-diff / 2;
+	}
